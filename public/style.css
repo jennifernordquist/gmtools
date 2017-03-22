@@ -1,3 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+@font-face {
+    font-family: 'Klavika';
+    src: url('klavika-bold-opentype.otf')format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url('friz-quadrata-tt.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+	font-family: 'Univers Condensed';
+	src: url('UniversCondensed.ttf')format('truetype');
+	font-weight: normal;
+  font-style: normal;
+}*/
+
+/*
+Colors: 
+	Light Grey: #59595b;
+	Gold: #f1b603;
+*/
+
 body {
-	color: red;
+	font-family: 'Friz Quadrata';
+	background-color: #dddddd;
+	height: 100%;
+	width: 100%;
+}
+
+.stat-block {
+	width: 25em;
+	min-height: 4em;
+	font-size: large;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.name {
+	margin-top: 0;
+	padding: .2em;
+	font-size: larger;
+	font-family: "Friz Quadrata";
+	border-bottom: .05em solid #000;
+	margin-bottom: .15em;
+}
+
+.description {
+	margin: 0 0 .15em 0;
+}
+
+.block-row {
+	border-top: .15em solid #f1b603;
+}
+
+.block-row:last-of-type {
+	border-bottom: .15em solid #f1b603;
+}
+
+.block-row.attr {
+	display: flex;
+}
+
+.attr-chart {
+	flex-grow: 1;
+	text-align: center;
+}
+.label, .attr-label {
+	background: #000;
+	color: #f1b603;
+	font-family: 'Klavika';
+	padding: .2em;
+}
+
+.data, .attr-data {
+	background: #59595b;
+	color: #fff;
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding: .2em;
+}
+
+.attr-data {
+	border-top: .15em solid #f1b603;
+}
+
+.descriptor {
+	display: flex;
+}
+
+.descriptor>.label {
+	width: 33.33%;
+}
+
+.descriptor>.data {
+	width: 66.66%;
 }
